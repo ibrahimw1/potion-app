@@ -128,11 +128,10 @@ React.useEffect(() => {
   </kbd>{" "}
   or click the <span style={{ color: '#8B5CF6', fontWeight: 'bold' }}>potion</span> above to trigger AI autocomplete
 </span>
-      {predictedLanguage && (
+      
         <div className="mt-2 text-sm text-gray-600">
-          Language: {predictedLanguage}
+          Language: {predictedLanguage || "English"}
         </div>
-      )}
       </>
     );
   };
